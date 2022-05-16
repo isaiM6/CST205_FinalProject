@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def view_home():
-    return render_template("main.html", title="Home page")
+    return render_template("sample.html", title="Home page")
 
 @app.route("/time-managment")
 def view_time_management():
-    return render_template("sample.html", title="Time Management")
+    return render_template("time_management.html", title="Time Management")
 
 @app.route("/mental-strain")
 def view_mental_strain():
@@ -21,4 +21,6 @@ def view_finacials():
 @app.route("/credit")
 def view_credit():
     return render_template("sample.html", title="Credit")
+
+app.run(debug=True)
     

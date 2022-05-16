@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CST 205 Final</title>
+	
+	<!--Stylizing for example two   Delete if not needed-->
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  display: flex;
+	}
+
+	/* Create three equal columns that sits next to each other */
+	.column {
+	  flex: 33.33%;
+	  padding: 5px;
+	}
+	</style>
+	<!--Stylizing for example two   Delete if not needed-->
+	
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CST 205 Final</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_home') }}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('view_time_management') }}">Time Management <span class="sr-only">(current)</span> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_mental_strain') }}">Mental Strain</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_finacials') }}">Finacials</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_credit') }}">Credit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-4">
+          		{% if title %}
+          		  {{ title }}
+          		{% else %}
+          		  Default title
+          		{% endif %}
+	    </h1> 
+		
+	<!--Insert your current html here-->
+    
+        </div>
+
+		  <!--
+		<div style="display:inline-block;vertical-align:top;">
+			<img src="https://loonylabs.files.wordpress.com/2021/01/time-management.jpeg?w=1024" alt="img" style="width:500px"/>
+		</div>
+		-->
+
+		
+        <h3>Synopsis</h3>
+		<p style = "text-indent: 40px">One of the main issues that student face in school is with time management. Many college students find it difficult to find a balance
+            between school, social life, hobbies, and possibly a job. During college years, it is a time period where many students are in a point in their life where they 
+            are discovering themselves and being molded into the person they will become in the future. Having to jugle between the aspects of life mentioned above, and can have affect on students' performance in school.
+            
+        </p>
+	    <!-- Three pictures in a row -->
+		<div class="row">
+			<div class="column">
+			  <img src="https://dentistry.co.uk/wp-content/uploads/2019/10/effective-time-management-e1572432445757.jpg" alt="Snow" style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="http://simplelivingaustralia.com.au/wp-content/uploads/2018/01/time-management-for-students.png" alt="Forest" style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="https://loonylabs.files.wordpress.com/2021/01/time-management.jpeg?w=1024" alt="Mountains" style="width:100%">
+			</div>
+		  </div>
+		  <!-- Three pictures in a row -->
+
+
+		  <br>
+        <h3>Affects on students</h3>
+        
+		
+		<!-- Possible stylizing examples below-->
+		
+		<!-- Inline picture with text to the right -->
+        
+
+       
+		<div style="display:inline-block;">
+			<p style = "text-indent: 40px">
+				Research has shown that proper time management is highly related to academic success in college students. According to Muhammaed Saqib Khan, a professor
+				at Gomal University in Pakistan, there is a significant and positive relation between time planning, time management, and academic performance in students.
+				Time planning is an essential part of being in college and should be practiced as early as possible to ensure students have a higher possibilty of succeeding.
+			</p>
+		</div>
+			    <!-- Three pictures in a row -->
+				<div class="row">
+					<div class="column">
+					  <img src="https://www.ecampusnews.com/files/2016/07/student-success.jpg" alt="Snow" style="width:100%">
+					</div>
+					<div class="column">
+					  <img src="https://cdn.givingcompass.org/wp-content/uploads/2019/02/25124430/Keys-to-Increasing-the-Success-of-College-Students.jpg" alt="Forest" style="width:100%">
+					</div>
+					<div class="column">
+					  <img src="https://leadingwithtrust.com/wp-content/uploads/2015/02/success-failure-sign.jpg" alt="Mountains" style="width:100%">
+					</div>
+				  </div>
+				  <!-- Three pictures in a row -->
+		<br>		  
+		<h3>Solutions</h3>
+		<p style = "text-indent: 40px"> Luckily, there are many proven ways to improve student time management and maximize your success. Below are some tips that have helped many students stay on track and manage their time effectively.
+			<br><br><b>Click below to learn more:</b>
+		</p>
+		<!-- Inline picture with text to the right -->
+		<div class="d-flex justify-content-between">
+			<div class = "column">
+				<button type="button" id="tip1" class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" data-placement="bottom"  >
+				  Tip #1
+				</button>
+			</div>
+			<div class = "column">
+				<button type="button" id="tip2" class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" data-placement="bottom" >
+				Tip #2
+				</button>
+			</div>
+			<div class = "column">
+				<button type="button" id="tip3" class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" data-placement="bottom" >
+				Tip #3
+				</button>
+			</div>
+			<div class = "column">
+				<button type="button" id="tip4" class="btn btn-lg btn-outline-primary" data-container="body" data-toggle="popover" data-placement="bottom" >
+				Tip #4
+				</button>
+			</div>
+
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		
+
+
+		<!-- Three pictures in a row 
+		<div class="row">
+		  <div class="column">
+			<img src="https://loremflickr.com/320/240" alt="Snow" style="width:100%">
+		  </div>
+		  <div class="column">
+			<img src="https://loremflickr.com/320/240" alt="Forest" style="width:100%">
+		  </div>
+		  <div class="column">
+			<img src="https://loremflickr.com/320/240" alt="Mountains" style="width:100%">
+		  </div>
+		</div>
+		-->
+	
+		
+    </div>
+	<!--Insert your current html here-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/static/js/script.js"></script>
+</body>
+<hr>
+<footer style="text-align:center;">
+    CST205 Multimedia Programming. 2022
+    <br>
+    <b>Sources: </b> Nasrullah_Phd, Shazia & Saqib Khan, Muhammad. (2015). The Impact of Time Management on the Students' Academic Achievements. 11. 
+	<br>
+    <br>
+  </footer>
+
+</html>
