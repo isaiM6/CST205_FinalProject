@@ -12,7 +12,7 @@ def view_time_management():
 
 @app.route("/mental-strain")
 def view_mental_strain():
-    return render_template("sample.html", title="Mental Strain")
+    return render_template("mental_health.html", title="Mental Strain")
     
 @app.route("/finacials")
 def view_finacials():
