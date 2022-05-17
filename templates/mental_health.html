@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CST 205 Final</title>
+	
+	<!--Stylizing for example two   Delete if not needed-->
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  display: flex;
+	}
+
+	/* Create three equal columns that sits next to each other */
+	.column {
+	  width: 200px; 
+	  height: 200px; 
+	  object-fit: cover;
+	  flex: 33.33%;
+	  padding: 5px;
+	}
+	</style>
+	<!--Stylizing for example two   Delete if not needed-->
+	
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CST 205 Final</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_home') }}">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('view_time_management') }}">Time Management </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_mental_strain') }}">Mental Health <span class="sr-only">(current)</span></a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_finacials') }}">Finacials</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_credit') }}">Credit</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-4">
+          		{% if title %}
+          		  {{ title }}
+          		{% else %}
+          		  Default title
+          		{% endif %}
+	    </h1> 
+		
+	<!--Insert your current html here-->
+    
+        </div>
+
+		  <!--
+		<div style="display:inline-block;vertical-align:top;">
+			<img src="https://loonylabs.files.wordpress.com/2021/01/time-management.jpeg?w=1024" alt="img" style="width:500px"/>
+		</div>
+		-->
+
+		
+        <h3>Synopsis</h3>
+		<p style = "text-indent: 40px">Mental health is a growing concern for past, present, and future generations of students. Many students will stress over classes and assignments. 
+					Tack on being fresh out of high school or an adult with outside stimulants. Even before the pandemic, mental health-related illnesses were on a rise. An article from APM reports 
+					puts the estimate that around 1.2 million more people reported experiencing a mental illness from 2017 to 2018.
+        </p>
+	    <!-- Three pictures in a row -->
+		<div class="row">
+			<div class="column">
+			  <img src="https://images.squarespace-cdn.com/content/v1/60818be3726c6c6c3f24a841/1622140128102-KWTH9R30PZ4DOZ9UN9KB/Mental+Health.png" alt="Snow" style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="https://www.bu.edu/files/2021/10/mental-health-header.jpg" alt="Forest" style="width:100%">
+			</div>
+			<div class="column">
+			  <img src="https://cdni.iconscout.com/illustration/premium/thumb/mental-health-3609165-3016790.png" alt="Mountains" style="width:100%">
+			</div>
+		  </div>
+		
+		  <!-- Three pictures in a row -->
+		<br>
+		<br>
+		<br>
+        <h3>Affects on students</h3>
+		<div style="display:inline-block;">
+			<p style = "text-indent: 40px">
+				The National Library of Medicine states in a paper regarding college-age individuals and psychiatric disorders, that 73% of students experience some form of a mental health crisis during college. 
+				More than 80% feel overwhelmed by what had to be done within the past year regarding their education. While another 45% of the sample felt hopeless. 
+			</p>
+			<p style = "text-indent: 40px">
+				The importance of mental health becomes apparent when only 25% of students with mental health problems seek help. Only ¼ of students who are suffering from mental health in some form or another 
+				go out and seek help to get better. Students who do not seek help continue to suffer and may develop illnesses that could be deadly. Illnesses such as depression can worsen and lead to potential suicide.
+
+			</p>
+			<p style = "text-indent: 40px">
+				There is a large stigma around mental health that acts as a barrier to preventing students from taking a step toward recovery. 
+				Mental health in general needs to be discussed more openly within school settings, especially during early developmental years. 
+				Support needs to be offered and provided that is easily accessible. Most importantly, there needs to be an environment that is 
+				kind and welcoming to those who need a space to talk. 
+			</p>
+		</div>
+			    <!-- Three pictures in a row -->
+				<div class="row">
+					<div class="column">
+					  <img src="https://namiwisconsin.org/wp-content/uploads/sites/218/2019/06/rally.jpg" alt="Snow" style="width:100%">
+					</div>
+					<div class="column">
+					  <img src="https://idronline.org/wp-content/uploads/2021/01/Illustration-of-a-group-therapy-session_Unsplash_resized-1024x683.jpg" alt="Forest" style="width:100%">
+					</div>
+					<div class="column">
+					  <img src="https://www.inquirer.com/resizer/acB7-4nOLGWLehoBvPW9vvmayvU=/760x507/smart/filters:format(webp)/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/FHTF4P5REJAENAGIP3A7SGFBSU.jpg" alt="Mountains" style="width:100%">
+					</div>
+				  </div>
+				  <!-- Three pictures in a row -->
+
+		<br>
+		<br>
+		<br>
+		<h3>Solutions</h3>
+		<div style="display:inline-block;">
+			<p>
+				<b>Access to Services: </b> Increase easy access to mental health services on and off campus. Having a website with information of services provided on and off campus is a great start.
+			</p>
+			<p>
+				<b>Decrease Stigma: </b> The stigma around mental health needs to be addressed. Mental health should be taken seriously and people should not need to worry about feeling weak or worried about someone's judgement if they seek help.
+				Talk about mental health early on and let people know that there is nothing to be ashamed of. Asking for help doesn't make you weak.
+			</p>
+			<p>
+				<b>Change the System:</b> Colleges need to be more aware of challenges that may impact their students wellbeing and mental health. Being up-to-date on clinical resources that will help students and potentially recieving input from 
+				your students is a step in the right direction.
+			</p>
+			<p>
+				<b>Establish platforms: </b> Having a safe space for students to talk to one another or to seek help is important. Establish platforms that encourage support and promote the wellbeing of students.
+			</p>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+    </div>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/static/js/script.js"></script>
+</body>
+<hr>
+<footer style="text-align:center;">
+    CST205 Multimedia Programming. 2022
+    <br>
+    <b>Sources: </b> 
+	<br>
+		Aslanian, Sasha, and Alisa Roth. “Inside the College Mental Health Crisis.” Inside the College Mental Health Crisis | Under Pressure | APM Reports, APM Reports, 4 May 2022, https://www.apmreports.org/episode/2021/08/19/under-pressure-the-college-mental-health-crisis. 
+	<br>	
+		Blanco, Carlos, et al. “Mental Health of College Students and Their Non-College-Attending Peers: Results from the National Epidemiologic Study on Alcohol and Related Conditions.” Archives of General Psychiatry, U.S. National Library of Medicine, Dec. 2008, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2734947/. 
+	<br>
+		The College Mental Health Crisis: A Call for Cultural Change – Part 1. https://www.mghclaycenter.org/parenting-concerns/6752/. 
+    <br>
+		The College Mental Health Crisis: A Call for Cultural Change – Part 2. https://www.mghclaycenter.org/parenting-concerns/college-mental-health-crisis-call-cultural-change-part-2/. 
+	<br>
+		Wilcox, Holly C, et al. “Prevalence and Predictors of Persistent Suicide Ideation, Plans, and Attempts during College.” Journal of Affective Disorders, U.S. National Library of Medicine, Dec. 2010, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2924459/. 
+	<br>
+  </footer>
+
+</html>
