@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(248, 240, 227);
+}
+
+h1{
+    text-align: center;
+}
+
+nav{
+    background-color: rgb(227,235,248);
+}
+
+.jumbotron{
+    background-color: rgb(227,235,248);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
