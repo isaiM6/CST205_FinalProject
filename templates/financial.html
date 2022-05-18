@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CST 205 Final</title>
+	
+	<!--Stylizing for example two   Delete if not needed-->
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.row {
+	  display: flex;
+	}
+
+	/* Create three equal columns that sits next to each other */
+	.column {
+	  flex: 33.33%;
+	  padding: 5px;
+	}
+	</style>
+	<!--Stylizing for example two   Delete if not needed-->
+	
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CST 205 Final</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{{ url_for('view_home') }}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_time_management') }}">Time Management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_mental_strain') }}">Mental Strain</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('view_finacials') }}">Finacials</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <h1 class="display-4">
+          		{% if title %}
+          		  {{ title }}
+          		{% else %}
+          		  Default title
+          		{% endif %}
+	    </h1>
+		
+	<!--Insert your current html here-->
+        </div>
+		
+
+		  <h3>Finances During School</h3>
+    
+    <p>
+    As college students persue a further education, many find themselves in various states of financial satisfaction. Because of this, there will be times where students have to take out loans or apply for other payment methods to help cover the financial side of college. However, without proper financial knowledge, debt totals can reach a high that may be too much on the student handle both during school and after they graduate. According to a study from the <a href="https://files.eric.ed.gov/fulltext/EJ1043230.pdf">Journal of Financial Counseling and Planning</a>, where the authors found that students of middle and low resource schools were hesiant about taking out student loans. This is in addition to using credit cards since financial aid is not enough. Debt can also grow if a student has little financial knowledge or literacy (money related practices such as investing, saving, money management, and more), which can lead to lower financial satisfaction (a person's satisfaction of their income, amount of saved wealth, and more). This can spiral into a worse psychological state that can spiral.
+    </p>
+
+        <!-- 		Three pictures in a row  -->
+		<div class="row">
+		  <div class="column">
+			<img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2021_06/3449858/210212-graduation-student-debt-se-639p.jpg" alt="img" style="width:100%"/>
+		  </div>
+		  <div class="column">
+			<img src="https://www.politico.com/dims4/default/bd3a011/2147483647/strip/true/crop/1160x773+0+0/resize/630x420!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2Fc5%2Fa6%2F08cf81f34f7487a84fae497e2801%2Fap21146474583899-1.jpg" alt="img" style="width:100%"/>
+		  </div>
+		  <div class="column">
+			<img src="https://nypost.com/wp-content/uploads/sites/2/2022/03/money-diploma.jpg" alt="img" style="width:100%"/>
+		  </div>
+		</div>
+<!-- 		 Three pictures in a row -->
+    
+  <h3>Psychological Toll of Debt</h3>
+    <p>
+        The presence of debt can be taxing on an individual's mind, especially a young college student who may have other stressors in their lives. According to <a href="https://www.accreditedschoolsonline.org/resources/student-loans/"> accreditedschoolsonline.org </a>, there can be negative financial thoughts. Can a student can get their first job out of school? Can they afford a house or car or other big purchases? Questions can pop up when the reality of the size of their debt comes to mind. This can lead to manifestations of depression, anixiety, and extreme stress. However, there are many solutions to both lessen the weight of debt and the anxiety that comes with it.
+    </p>
+    <p>
+        While varying from person to person, those seeking a higher education in graduate school or some other form can also factor into a student's mental health. An author from the <a href="https://www.apa.org/gradpsych/2013/01/debt">American Psychological Association </a> states how sometimes, a person can fall into financial denial, where a person become irresponsible with their finances like spending without a budget and just paying no mind to money.
+    </p>
+		
+		<!-- Possible stylizing examples below-->
+		
+		<!-- Inline picture with text to the right -->
+<!-- 		<div style="display:inline-block;vertical-align:top;">
+			<img src="https://news.ufl.edu/media/newsufledu/images/2016/09/FAFSAsquare.jpg" alt="img" height='250px' width='250px'/>
+		</div> -->
+		<div style="display:inline-block;">
+			<h3>Solutions</h3>
+    <h4>Seek a Financial Professional's Help</h4>
+            <p>
+            Finding experts on how to borrow or pay off student loans in the future. A college may have services and experts to help worried students. There are plenty of other privately run companies who can help as well. Meeting with a professional to discuss options and set up a plan can be the first steps to ease the thought of hefty student debt.
+            </p>
+    <h4>Know What Loans You Have and Owe</h4>
+            <p>
+            Either when a student is still in school or a graduate is currently trying to pay them off, make sure to keep track of how many loans you have, who those loans belong to, and how you can repay them. Getting organized can help give a form of a control over student loans.
+            </p>
+    <h4>Learning Financial Literacy</h4>
+            <p>
+            Financial literacy is the knowldedge and application of financial skills from day to day life. Learning how to be financially literate early can be a good, no matter your background. Schools may even provide courses on financial literacy for students to take, covering various topics on how to budget and spend responsibly to how to invest money wisely, and help on spending as a student and getting help for student loans.
+            </p>
+		</div>
+        <!-- 		Three pictures in a row  -->
+		<div class="row">
+		  <div class="column">
+			<img src="https://www.nmrestaurants.org/wp-content/uploads/2019/11/443-1080x608.jpg" alt="img" style="width:100%"/>
+		  </div>
+		  <div class="column">
+			<img src="https://news.ufl.edu/media/newsufledu/images/2016/09/FAFSAsquare.jpg" alt="img" style="width:100%"/>
+		  </div>
+		  <div class="column">
+			<img src="https://www.debt.org/wp-content/uploads/2013/06/Paying-Off-Student-Loans.jpg" alt="img" style="width:100%"/>
+		  </div>
+		</div>
+<!-- 		 Three pictures in a row -->
+		<!-- Inline picture with text to the right -->
+		<br>
+		<br>
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
+        <br>
+		<br>
+		<br>
+		<br>
+		
+		
+   </div>
+	<!--Insert your current html here-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/static/js/script.js"></script>
+</body>
+<hr>
+<footer style="text-align:center;">
+    CST205 Multimedia Programming. 2022
+    <br>
+    <b>Sources: </b>
+    <br>
+    Accredited Students Online Staff Writers. (2022). Your Stress-Free Guide to Student Loans 
+	<br>
+    Novotney, Amy. (2013). Facing Up to Debt
+    <br>
+    Archuleta, KristL. Dale, Anita. Spann, Scott M. (2013). College Students and Financial Distress: Exploring Debt,
+Financial Satisfaction, and Financial Anxiety
+  </footer>
+
+</html>
